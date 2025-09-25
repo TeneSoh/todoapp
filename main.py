@@ -10,7 +10,6 @@ import todoapp.routers.todo as todo
 
 # from database import engine, SessionLocal
 
-
 app = FastAPI()
 
 # request validation 
@@ -23,4 +22,8 @@ app = FastAPI()
 app.include_router(auth.routers)
 app.include_router(todo.routers)
 # models.Base.metadata.create_all(bind=engine)
+
+@app.get('/')
+def test():
+    return {'message': 'Api is working'}
 
