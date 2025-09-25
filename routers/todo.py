@@ -9,7 +9,7 @@ from starlette import status
 from routers.auth import get_current_user
 # import todoapp.routers.auth as auth
 
-from todoapp.database import engine, SessionLocal
+from database import engine, SessionLocal
 
 
 routers = APIRouter(prefix="/todo", tags=["todo"])
