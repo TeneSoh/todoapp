@@ -5,8 +5,8 @@
 from fastapi import FastAPI
 # import models
 # from models import Todos
-import todoapp.routers.auth as auth
-import todoapp.routers.todo as todo
+import routers.auth as auth
+import routers.todo as todo
 
 # from database import engine, SessionLocal
 
