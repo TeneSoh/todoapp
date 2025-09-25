@@ -3,11 +3,11 @@ from datetime import datetime, timezone, timedelta
 from sqlalchemy.orm import Session
 from fastapi import FastAPI, APIRouter, Depends, HTTPException
 from pydantic import BaseModel, ConfigDict
-from todoapp.models import Users
+from models import Users
 from typing import Annotated
 from passlib.context import CryptContext
 from starlette import status
-from todoapp.database import SessionLocal
+from database import SessionLocal
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import JWTError, jwt
 import secrets

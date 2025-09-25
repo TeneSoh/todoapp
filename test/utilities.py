@@ -4,11 +4,11 @@ from sqlalchemy.pool import StaticPool
 from sqlalchemy.orm import sessionmaker
 from fastapi.testclient import TestClient
 from fastapi import status
-from todoapp.models import Users, Todos
+from models import Users, Todos
 import pytest
 
-from todoapp.database import Base
-from todoapp.main import app
+from database import Base
+from main import app
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 

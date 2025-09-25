@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 from fastapi import status
-from todoapp.main import app
+from main import app
 
 client = TestClient(app)
 def test_check_api_is_working():

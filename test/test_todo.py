@@ -6,7 +6,7 @@
 # from fastapi import status
 
 
-from todoapp.routers.todo import get_db, get_current_user
+from routers.todo import get_db, get_current_user
 # from todoapp.database import Base
 # from todoapp.main import app
 # from todoapp.models import Todos

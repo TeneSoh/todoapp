@@ -1,7 +1,7 @@
-from todoapp.routers.auth import get_db
+from routers.auth import get_db
 from .utilities import *
 from passlib.context import CryptContext
-from todoapp.routers.auth import authenticate_user, create_access_token, create_refresh_token, get_current_user, SECRET_KEY, ALGORITHM
+from routers.auth import authenticate_user, create_access_token, create_refresh_token, get_current_user, SECRET_KEY, ALGORITHM
 from datetime import timedelta
 from jose import jwt
 import pytest

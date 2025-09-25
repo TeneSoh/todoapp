@@ -3,10 +3,10 @@ from pydantic import BaseModel, ConfigDict
 from sqlalchemy.orm import Session
 # from fastapi import Depends, FastAPI, HTTPException, Path, status, APIRouter
 from fastapi import Depends, HTTPException, Path, APIRouter
-from todoapp.models import Base
-from todoapp.models import Todos
+from models import Base
+from models import Todos
 from starlette import status
-from todoapp.routers.auth import get_current_user
+from routers.auth import get_current_user
 # import todoapp.routers.auth as auth
 
 from todoapp.database import engine, SessionLocal
